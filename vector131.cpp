@@ -1,5 +1,5 @@
 #include <iostream>
-#include "prototype.hpp"
+#include "proto.hpp"
 using namespace std;
 
 int main() {
