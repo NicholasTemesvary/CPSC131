@@ -8,7 +8,7 @@ int main() {
 }
 
 {
-    private:
+    private:        /*The Private initialization of the class for the vector131, this is where we initialize the integers we need, the size of the array, the biggest number of the array (which we initialize) and the array itself */
     int siz;                
     int numEr;             
     int *arr;               
@@ -24,12 +24,12 @@ int main() {
         for (size_t i = 0; i <numEr; i++){
             tempArr[i] = arr[i];
         }
-        delete[] arr;
+        delete[] arr;              /* Deletes our temporary array */
         arr = tempArr;
         initialize(numEr);
     }
     
-    public:
+    public:                          /* The public part of our class vector131 */
     IntArr(){
         siz=10;
         numEr = 0;
@@ -65,10 +65,10 @@ int main() {
         return numEr; 
     }
 };
-int main(){
+int main(){                          /* The part of our function that gets read and asks for imputs */
     IntArr arr;
     int size_array, size;
-    cout << "Enter the size of the array: " << endl;
+    cout << "Change the size of the array: " << endl;
     cin >> size_array;
     arr.add(size_array);
     
